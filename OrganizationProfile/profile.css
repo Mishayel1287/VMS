@@ -1,0 +1,260 @@
+* {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/*top-bar css*/
+.top-bar {
+  padding: 3px 0;
+  font-size: 15px;
+  color: white;
+  background: #202020;
+}
+
+.top-bar i {
+  margin-right: 5px;
+}
+
+.top-bar .col-sm-6:first-child {
+  text-align: left;
+}
+
+.top-bar .col-sm-6:last-child {
+  text-align: right;
+}
+
+@media (max-width: 575.98px) {
+  .top-bar {
+      border-bottom: 1px solid rgba(255,255,255,.1);
+  }
+  
+  .top-bar .col-sm-6:first-child,
+  .top-bar .col-sm-6:last-child {
+      text-align: center;
+  }
+}
+/* end top-bar css*/
+
+/*Logo css*/
+.logo {
+  margin-left: 560px;
+}
+
+/*nav-bar css*/
+nav {
+  background-color: #202020;
+  color: #fff;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-right: 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #FF6F61; 
+}
+
+.nav-items {
+  list-style: none;
+  display: flex;
+}
+
+.nav-items li {
+  margin-right: 20px;
+}
+
+.nav-items li a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.nav-items li a:hover {
+  color: #FF6F61; 
+}
+/*end nav-bar css*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#form{
+    background-color: rgb(87, 140, 165);
+    color: aliceblue;
+    width: 40%;
+    height:auto;
+    border-radius: 6px;
+    margin: 70px auto;;
+    padding:50px;
+    margin-top: 6px;
+    font-weight: bold;
+    box-shadow: 10px 10px 5px #333;   
+}
+
+h1{
+    text-align: center;
+}
+
+.image{
+    /* The image used */
+    background-image: url("image.jpg");
+    background-position:auto;
+    background-repeat: no-repeat;
+    background-size:cover;
+    position: relative;
+  }
+
+  input{
+    width: 90%;
+    border-radius: 4px;
+    border: 3px solid #f6efef;
+    padding: 4px;
+}
+
+/*save button*/
+#btn{
+    width: 100%;
+    color:rgb(255, 255, 255);
+    background-color: rgb(7, 94, 134);
+    margin-left: -15px;
+    padding:10px;
+    font-weight: bold;
+    font-size:larger;
+    font-family: initial;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#btn:hover {
+  opacity: 1;
+  background-color:rgb(158, 173, 185);
+}
+
+/*footer css*/
+.footer {
+  position: relative;
+  padding: 10px 0 0 0;
+  background:  #202020;
+  height: 300px;
+  margin-top: -132px;
+}
+
+.footer .footer-widget {
+  position: relative;
+  width: 100%;
+  margin-bottom: 30px;
+  background-color:  #202020;
+}
+
+.footer .footer-widget h2 {
+  font-size: 25px;
+  white-space: nowrap;
+  margin-bottom: 20px;
+  color: #ccc; 
+}
+
+.footer .footer-widget ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer .footer-widget ul li {
+  margin-bottom: 12px; 
+}
+
+.footer .footer-widget ul li:last-child {
+  margin-bottom: 0; 
+}
+
+.footer .footer-widget ul li a {
+  color: #ccc;
+  white-space: nowrap;
+  display: block;
+  line-height: 20px;
+  transition: all .3s;
+  color: #ccc; 
+}
+
+.footer .footer-widget ul li a::before {
+  content: '\f105';
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  padding-right: 5px;
+  color: #ccc; 
+}
+
+.footer .footer-widget ul li a:hover {
+  color: #FF6F61;
+}
+
+.footer .footer-widget ul li a:hover::before {
+  content: '\f101';
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+}
+
+.footer .contact-info p {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #ccc; 
+}
+
+.footer .contact-info p i {
+  margin-right: 5px;
+}
+
+.footer .social {
+  position: relative;
+  width: 100%;
+  color: #ccc; 
+}
+
+.footer .social a {
+  display: inline-block;
+  margin: 10px 5px 0 0;
+  width: 40px;
+  height: 40px;
+  padding: 6px 0;
+  text-align: center;
+  font-size: 18px;
+  color: #ccc;
+  border: 1px solid #353535;
+  border-radius: 4px;
+  transition: all .3s;
+}
+
+.footer .social a:hover {
+  color: #FF6F61;
+  border-color: #FF6F61;
+}
+
+.bottom-footer {
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #222;
+  color: #ccc;
+}
+/*end footer*/
+

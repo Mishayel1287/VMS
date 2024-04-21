@@ -1,0 +1,141 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/*Side-bar styling*/
+.sidebar {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #333;
+  padding-top: 20px;
+}
+  
+.sidebar a {
+  padding: 5px 15px;
+  text-decoration: none;
+  font-size: 15px;
+  color: white;
+  display: block;
+  margin-top: 20px;  
+}
+  
+.sidebar a:hover {
+  color: #FF6F61;
+}
+  
+.sidebar h2 {
+  color: white;
+  text-align: center;
+}
+
+/*Content styling*/
+.content {
+  margin-left: 250px;
+  padding: 50px;
+}
+
+.content h2 {
+  text-align: left;
+}
+  
+.cont {
+  padding: 50px;
+  display: flex;
+  flex-wrap: nowrap; 
+  justify-content: center; 
+}
+
+.dashboard-section {
+  width: 250px;
+  background-color: #c3b6b6;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 60px;
+  margin-right: 20px; 
+  margin-left: 10px;
+  box-sizing: border-box;
+}
+
+.dashboard-section:last-child {
+  margin-right: 0; 
+}
+
+.dashboard-section h3 {
+  font-size: 14px;
+  
+}
+
+.dashboard-section p {
+  font-size: 10px;
+  color: #666;
+  margin-bottom: 25px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 9px 30px;
+  border: none;
+  border-radius: 4px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #FF6F61;
+}
+
+/*Profile image styling*/
+.profile img {
+  width: 100px; 
+  height: 100px; 
+  border-radius: 50%;
+  margin-bottom: 20px;
+  display: block;
+  margin: 0 auto; 
+}
+
+/*Volunteers management styling*/
+.content-volunteers {
+  padding: 40px;
+}
+
+.volunteer-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.volunteer-table th, .volunteer-table td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.volunteer-table th {
+  background-color: #f2f2f2;
+}
+
+.volunteer-table td {
+  text-align: center;
+}
+
+.volunteer-table button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+}
+
+.volunteer-table button:hover {
+  background-color: #FF6F61;
+}
+
