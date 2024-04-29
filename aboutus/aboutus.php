@@ -23,8 +23,8 @@
                         <a href="./../index.html">HOME</a>
                     </li>
                     <li><a href="./aboutus.php">ABOUT US</a></li>
-                    <li><a href="">CONTACT US</a></li>
-                    <li><a href="livechat/" target="_blank">LIVE CHAT</a></li>
+                    <li><a href="/GroupProject/contact/contactus.php">CONTACT US</a></li>
+                    <li><a href="/GroupProject/livechat/" target="_blank">LIVE CHAT</a></li>
                 </ul>
                 <div class="cont">
                     <ul class="nav-items">
