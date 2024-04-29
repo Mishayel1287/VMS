@@ -278,7 +278,7 @@ nav {
         <div class="container">
             <ul class="nav-links">
                 <li>
-                    <a href="index.html">HOME</a>
+                    <a href="./../index.html">HOME</a>
                 </li>
                 <li><a href="/GroupProject/volunteer/Individualprofile.php">PERSONAL APPLICATION</a></li>
                 <li><a href="/GroupProject/volunteer/organizationprofile.php">ORGANIZATIONAL APPLICATION</a></li>

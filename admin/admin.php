@@ -16,6 +16,7 @@
   <a href="manage_volunteers.php">Manage Volunteers</a>
   <a href="manage_events.php">Manage Events</a>
   <a href="manage_users.php">User Management</a>
+  <a href="/GroupProject/">Signout</a>
 </div>
 
 <div class="content">
@@ -31,7 +32,7 @@
 
     <div class="dashboard-section">
         <h3>Manage Events</h3>
-        <a href="manage_events.php" class="btn btn-primary">Events</a>
+        <a href="event-list.php" class="btn btn-primary">Events</a>
     </div>
     
     <div class="dashboard-section">

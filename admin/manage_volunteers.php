@@ -16,7 +16,7 @@ function fetchVolunteers($tableName) {
 function displayVolunteers($result, $type) {
     while ($row = $result->fetch_assoc()) {
         echo "<tr>";
-        echo "<form method='POST' action='handle_volunteers.php'>";
+        echo "<form method='POST' action='manage_volunteers.php'>";
         echo "<td>" . htmlspecialchars($row['name']) . "</td>";
         echo "<td>" . htmlspecialchars($row['email']) . "</td>";
         echo "<td>" . htmlspecialchars($row['city']) . "</td>";
