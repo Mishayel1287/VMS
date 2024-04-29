@@ -48,8 +48,8 @@
                 <li>
                     <a href="/GroupProject/">HOME</a>
                 </li>
-                <li><a href="">ABOUT US</a></li>
-                <li><a href="">CONTACT US</a></li>
+                <li><a href="/GroupProject/aboutus/aboutus.php">ABOUT US</a></li>
+                <li><a href="/GroupProject/contact/contactus.php">CONTACT US</a></li>
             </ul>
             
         </div>
@@ -83,7 +83,7 @@
 						<h3> My Schedule</h3>
 					</div></a>
 
-					<a href=""><div class="nav-option option4">
+					<a href="/GroupProject/"><div class="nav-option option4">
                     <i class="fa fa-sign-out" style="font-size:38px"></i>
 						<h3>Sign Out</button></h3>
 					</div>

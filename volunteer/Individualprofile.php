@@ -89,8 +89,8 @@ if (isset($_POST['submit'])) {
                 <li>
                     <a href="/GroupProject/index.html">HOME</a>
                 </li>
-                <li><a href="">ABOUT US</a></li>
-                <li><a href="">CONTACT US</a></li>
+                <li><a href="/GroupProject/aboutus/aboutus.php">ABOUT US</a></li>
+                <li><a href="/GroupProject/contact/contactus.php">CONTACT US</a></li>
                 <li><a href="UserDashboard.php">DASHBOARD</a></li>
             </ul>
             
