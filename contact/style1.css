@@ -1,0 +1,188 @@
+
+
+* {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/*top-bar css*/
+.top-bar {
+  padding: 3px 0;
+  font-size: 15px;
+  color: white;
+  background: #202020;
+}
+
+.top-bar i {
+  margin-right: 5px;
+}
+
+.top-bar .col-sm-6:first-child {
+  text-align: left;
+}
+
+.top-bar .col-sm-6:last-child {
+  text-align: right;
+}
+
+@media (max-width: 575.98px) {
+  .top-bar {
+      border-bottom: 1px solid rgba(255,255,255,.1);
+  }
+  
+  .top-bar .col-sm-6:first-child,
+  .top-bar .col-sm-6:last-child {
+      text-align: center;
+  }
+}
+/* end top-bar css*/
+
+/*Logo css*/
+.logo {
+  text-align: center;
+}
+
+/*nav-bar css*/
+nav {
+  background-color: #202020;
+  color: #fff;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #FF6F61; 
+}
+
+.nav-items {
+  list-style: none;
+  display: flex;
+}
+
+.cont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+}
+.nav-items li {
+  margin-right: 20px;
+}
+
+.nav-items li a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.nav-items li a:hover {
+  color: #FF6F61; 
+}
+
+
+.banner {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  background-color: white;
+  margin: 0;
+}
+
+.image {
+  width: 380px; 
+  height: 300px; 
+  margin: 0 20px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.image:hover {
+  transform: scale(1.2); 
+}
+
+
+
+
+*{
+
+    padding: 0px;
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+body{
+    background-image: url("blue-hands-with-hearts-small-scaled.jpg");
+    background-size: cover;
+    text-align: center;
+}
+
+.contact-form{
+    margin-top: 100px;
+    color:rgb(14, 0, 82);
+    text-transform: uppercase;
+    transition: all 4s ease-in-out;
+}
+
+.contact-form h1{
+    font-size: 32px;
+}
+
+form{
+    margin-top: 50px;
+    transition: all 4s ease-in-out ;
+}
+
+.form-control{
+    width: 400px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid gray;
+    color: #131212;
+    font-size: 18px;
+    margin-bottom: 18px;
+}
+
+
+input{
+    height: 45px;
+}
+
+form .submit{
+    background: #608bc3;
+    border: transparent;
+    color: #100e0e;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    height: 50px;
+    margin-top: 20px;
+}
+
+form .submit:hover{
+    background: #285cb6;
+    cursor: pointer;
+}

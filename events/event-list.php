@@ -18,17 +18,15 @@
         <nav>
             <div class="container">
                 <ul class="nav-links">
-                    <li>
-                        <a href="./../index.html">HOME</a>
-                    </li>
+                    <li><a href="./../index.html">HOME</a></li>
+                    <li><a href="./../volunteer/UserDashboard.php">DASHBOARD</a></li>
                     <li><a href="./../aboutus/aboutus.php">ABOUT US</a></li>
-                    <li><a href="">CONTACT US</a></li>
-                    <li><a href="livechat/" target="_blank">LIVE CHAT</a></li>
+                    <li><a href="/GroupProject/contact/contactus.php">CONTACT US</a></li>
+                    <li><a href="/GroupProject/livechat/" target="_blank">LIVE CHAT</a></li>
                 </ul>
                 <div class="cont">
                     <ul class="nav-items">
-                        <li><a href="registrationform">REGISTER</a></li>
-                        <li><a href="login/login.php">LOGIN</a></li>
+                        
 
                     </ul>
                     <ul>
@@ -44,7 +42,7 @@
     <div class="events-container">
         <div class="top-row">
             <div class="title">Events</div>
-            <button class="add-event">Add Events</button>
+            
         </div>
 
         <?php
