@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Apr 20, 2024 at 11:16 AM
+-- Generation Time: Apr 29, 2024 at 04:00 PM
 -- Server version: 8.2.0
 -- PHP Version: 8.2.13
 
@@ -45,6 +45,28 @@ INSERT INTO `admin` (`id`, `user`, `pass`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `adminlogin`
+--
+
+DROP TABLE IF EXISTS `adminlogin`;
+CREATE TABLE IF NOT EXISTS `adminlogin` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `username` varchar(50) NOT NULL,
+  `email` varchar(50) NOT NULL,
+  `password` varchar(50) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Dumping data for table `adminlogin`
+--
+
+INSERT INTO `adminlogin` (`id`, `username`, `email`, `password`) VALUES
+(1, 'admin', 'admin@gmail.com', 'admin');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `application`
 --
 
@@ -80,6 +102,37 @@ CREATE TABLE IF NOT EXISTS `application` (
 
 INSERT INTO `application` (`id`, `fname`, `lname`, `email`, `address`, `city`, `phoneNo`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`, `sunday`, `Stime`, `Etime`, `role`, `otherRole`, `qualifications`, `ccase`, `license`) VALUES
 (4, 'Mishayel', 'Fernando', 'mishayelshamika@gmail.com', '112/A/15 Kamaragoda Road, Ganihimulla, Dewalapola', 'Minuwangoda', '0763178737', 'monday', 'tuesday', 'wednesday', '', '', '', '', '15:00', '17:00', 'animalShelter', '', 'veterinarian', 'No', 'Yes');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `contactus`
+--
+
+DROP TABLE IF EXISTS `contactus`;
+CREATE TABLE IF NOT EXISTS `contactus` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `First_name` varchar(50) NOT NULL,
+  `Last_name` varchar(50) DEFAULT NULL,
+  `Email` varchar(20) NOT NULL,
+  `Message` text CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `events`
+--
+
+DROP TABLE IF EXISTS `events`;
+CREATE TABLE IF NOT EXISTS `events` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) NOT NULL,
+  `date` date NOT NULL,
+  `description` text NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- --------------------------------------------------------
 
@@ -168,6 +221,29 @@ INSERT INTO `organizationprofile` (`id`, `name`, `type`, `email`, `city`, `phone
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `schedule_list`
+--
+
+DROP TABLE IF EXISTS `schedule_list`;
+CREATE TABLE IF NOT EXISTS `schedule_list` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `title` text NOT NULL,
+  `description` text NOT NULL,
+  `start_datetime` datetime NOT NULL,
+  `end_datetime` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Dumping data for table `schedule_list`
+--
+
+INSERT INTO `schedule_list` (`id`, `title`, `description`, `start_datetime`, `end_datetime`) VALUES
+(8, 'Teaching', 'Teaching English', '2024-04-30 09:00:00', '2024-04-30 12:30:00');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `signup1`
 --
 
@@ -181,7 +257,7 @@ CREATE TABLE IF NOT EXISTS `signup1` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `username` (`username`),
   UNIQUE KEY `email` (`email`)
-) ENGINE=MyISAM AUTO_INCREMENT=14 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=15 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Dumping data for table `signup1`
@@ -192,7 +268,8 @@ INSERT INTO `signup1` (`id`, `username`, `email`, `password`, `created_at`) VALU
 (4, 'Jane', 'jane@gmail.com', '$2y$10$D78MbEjAkNUSDOki98A.cufMMAo4pXsmIkKQZrOxJFJ0aQhdgCFg.', '2024-04-13 07:32:43'),
 (5, 'user', 'user@gmail.com', '$2y$10$T1jrpzVk5hTIbZ97onvufeNH5yP20QJphaiRiGsur9j95Dp/0m4D6', '2024-04-15 18:14:57'),
 (6, 'angelo', 'angelo@gmail.com', '$2y$10$0xMi0oA1WS4033ez.qi16uebS.qSOwx.7ak76AAOiSK1B1QXkmZ5.', '2024-04-16 07:33:28'),
-(13, 'misha', 'misha@gmail.com', '$2y$10$MKLwSFZzdjtwBmdXVQXrt.hw8y9iqWg7/cRp2BxXos/VmZLGY27cq', '2024-04-16 07:43:06');
+(13, 'misha', 'misha@gmail.com', '$2y$10$MKLwSFZzdjtwBmdXVQXrt.hw8y9iqWg7/cRp2BxXos/VmZLGY27cq', '2024-04-16 07:43:06'),
+(14, 'example', 'example@hotmail.com', '$2y$10$0pOYCz8Mw10lPVepPizDde4VFZkxNyPcymIhTc45d0RSk7Yqu0Qsq', '2024-04-28 15:47:19');
 
 -- --------------------------------------------------------
 
